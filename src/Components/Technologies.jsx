@@ -1,6 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb,SiExpress } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
+import { SiMysql ,SiLaravel ,SiWordpress  } from "react-icons/si";
 import {motion} from "framer-motion"
 
 const iconmotion =(duration)=> ({
@@ -35,14 +34,14 @@ const Technologies = () => {
       initial="initial"
       animate="animate"
       className="rounded-2xl border-4 border-neutral-800 p-4">
-      <SiMongodb className="text-7xl text-green-500" />
+      <SiMysql  className="text-7xl text-[#00618A]" />
       </motion.div>
       <motion.div
       variants={iconmotion(2)}
       initial="initial"
       animate="animate"
       className="rounded-2xl border-4 border-neutral-800 p-4">
-        <SiExpress className="text-7xl text-[#333333]" />
+        <SiLaravel className="text-7xl text-[#F53003]" />
       </motion.div>
       <motion.div
       variants={iconmotion(1.4)}
@@ -56,7 +55,7 @@ const Technologies = () => {
       initial="initial"
       animate="animate"
       className="rounded-2xl border-4 border-neutral-800 p-4">
-      <FaNodeJs className="text-7xl text-green-500"/>
+      <SiWordpress className="text-7xl text-[#00769D]"/>
       </motion.div>
       </motion.div>
     </div>
