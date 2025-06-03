@@ -12,7 +12,7 @@ export default function Experience() {
         Expérience
       </motion.h2>
       <div>
-        {EXPERIENCE.map((experince, index) => (
+        {EXPERIENCE.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -20,7 +20,7 @@ export default function Experience() {
               transition={{ duration: 1.5 }}
               className="w-full lg:w-1/4"
             >
-              <p className="text-sm text-neutral-400 mb-2">{experince.year}</p>
+              <p className="text-sm text-neutral-400 mb-2">{experience.year}</p>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
@@ -29,12 +29,12 @@ export default function Experience() {
               className="w-full max-w-xl lg:w-3/4"
             >
               <h6 className="mb-2 font-semibold">
-                {experince.role} -{" "}
+                {experience.role} -{" "}
                 <span className="text-sm text-purple-100">
-                  {experince.company}
+                  {experience.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
+              <p className="mb-4 text-neutral-400">{experience.description}</p>
             </motion.div>
           </div>
         ))}
