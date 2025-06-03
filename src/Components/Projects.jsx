@@ -28,7 +28,7 @@ const Projects = () => {
                   alt={project.title}
                   width={150}
                   height={150}
-                  className="mb-6 rounded"
+                  className="mb-6 rounded w-auto"
                 />
               </a>
             </motion.div>

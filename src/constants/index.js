@@ -30,9 +30,7 @@ export const EDUCATIONS = [
     role: "baccalauréat",
     School: "Abo Abas Esebti ",
   },
-
 ];
-
 
 export const PROJECTS = [
   {
@@ -51,8 +49,16 @@ export const PROJECTS = [
       "Ce portfolio personnel met en valeur des projets et des compétences avec un design interactif et moderne. Il utilise Framer Motion pour des animations et des transitions fluides, offrant une expérience utilisateur dynamique. Tailwind CSS est utilisé pour un style rapide et réactif, garantissant que le portfolio soit agréable à regarder sur tous les appareils. Le projet met en avant des réalisations clés et intègre des principes de design propres et efficaces.",
     technologies: [" React", "Framer Motion", "TailwindCSS"],
   },
+  { title: "Bazaar", image: "", url: "", description: "", technologies: [""] },
 ];
-
+export const EXPERIENCE=[
+  {
+    year: "2025 - continue",
+    role: "développeur",
+    company: "RED WALLS",
+    tasks:"J'ai récemment commencé une formation de 3 mois chez RED WALLS en tant que développeur WordPress, en me concentrant sur Elementor, Avada et Rey. Je suis toujours en formation, et je développe mes compétences en frontend et backend.",
+  },
+]
 export const CONTACT = {
   address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
   phoneNo: "+212-669499842",
