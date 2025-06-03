@@ -1,6 +1,7 @@
 import About from "./Components/About";
 import Contacts from "./Components/Contacts";
 import Education from "./Components/Education";
+import Experience from "./Components/Experience";
 import Hero from "./Components/Hero";
 import NavBar from "./Components/NavBar";
 import Projects from "./Components/Projects";
@@ -17,6 +18,7 @@ export default function App() {
         <About />
         <Technologies />
         <Education />
+        <Experience/>
         <Projects />
         <Contacts />
       </div>
