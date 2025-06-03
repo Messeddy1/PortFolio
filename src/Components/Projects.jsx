@@ -28,7 +28,7 @@ const Projects = () => {
                   alt={project.title}
                   width={150}
                   height={150}
-                  className="mb-6 rounded w-full"
+                  className="mb-6 rounded w-full lg:w-80"
                 />
               </a>
             </motion.div>

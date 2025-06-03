@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project1.png";
 import project3 from "../assets/projects/project3.png";
+import project4 from "../assets/projects/bazaar.png";
 export const HERO_CONTENT = `Développeur web enthousiaste et motivé, passionné par la création de solutions digitales modernes et performantes.
 J’aime apprendre, relever de nouveaux défis, et transformer des idées en projets concrets.
 
@@ -49,7 +50,8 @@ export const PROJECTS = [
       "Ce portfolio personnel met en valeur des projets et des compétences avec un design interactif et moderne. Il utilise Framer Motion pour des animations et des transitions fluides, offrant une expérience utilisateur dynamique. Tailwind CSS est utilisé pour un style rapide et réactif, garantissant que le portfolio soit agréable à regarder sur tous les appareils. Le projet met en avant des réalisations clés et intègre des principes de design propres et efficaces.",
     technologies: [" React", "Framer Motion", "TailwindCSS"],
   },
-  { title: "Bazaar", image: "", url: "", description: "", technologies: [""] },
+  { title: "Bazaar", image: project4, url: "https://bazar.bazaarya.store", description: "Bazaar est une application web responsive développée pour mon projet de fin d'études (PFE), dédiée à la vente de produits artisanaux marocains. L'application est construite avec React, Redux pour le frontend, et utilise une API Laravel  Sanctum pour le backend.",
+    technologies: ["React", "Redux RTK", "Laravel", "Responsive Design",], },
 ];
 export const EXPERIENCE=[
   {

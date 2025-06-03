@@ -1,5 +1,5 @@
 import { EXPERIENCE } from "../constants";
-
+import { motion } from "framer-motion";
 export default function Experience() {
   return (
     <div className="border-b border-neutral-900 pb-24">
@@ -34,7 +34,7 @@ export default function Experience() {
                   {experience.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400">{experience.description}</p>
+              <p className="mb-4 text-neutral-400">{experience.tasks}</p>
             </motion.div>
           </div>
         ))}
