@@ -51,7 +51,7 @@ export const PROJECTS = [
     technologies: [" React", "Framer Motion", "TailwindCSS"],
   },
   { title: "Bazaar", image: project4, url: "https://bazar.bazaarya.store", description: "Bazaar est une application web responsive développée pour mon projet de fin d'études (PFE), dédiée à la vente de produits artisanaux marocains. L'application est construite avec React, Redux pour le frontend, et utilise une API Laravel  Sanctum pour le backend.",
-    technologies: ["React", "Redux RTK", "Laravel", "Responsive Design",], },
+    technologies: ["React", "Redux RTK", "Laravel", "Responsive Design" ,"TailwindCSS",], },
 ];
 export const EXPERIENCE=[
   {
