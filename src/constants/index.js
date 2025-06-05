@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project1.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/bazaar.png";
+import landing from "../assets/projects/landing.png";
 export const HERO_CONTENT = `Développeur web enthousiaste et motivé, passionné par la création de solutions digitales modernes et performantes.
 J’aime apprendre, relever de nouveaux défis, et transformer des idées en projets concrets.
 
@@ -50,17 +51,42 @@ export const PROJECTS = [
       "Ce portfolio personnel met en valeur des projets et des compétences avec un design interactif et moderne. Il utilise Framer Motion pour des animations et des transitions fluides, offrant une expérience utilisateur dynamique. Tailwind CSS est utilisé pour un style rapide et réactif, garantissant que le portfolio soit agréable à regarder sur tous les appareils. Le projet met en avant des réalisations clés et intègre des principes de design propres et efficaces.",
     technologies: [" React", "Framer Motion", "TailwindCSS"],
   },
-  { title: "Bazaar", image: project4, url: "https://bazar.bazaarya.store", description: "Bazaar est une application web responsive développée pour mon projet de fin d'études (PFE), dédiée à la vente de produits artisanaux marocains. L'application est construite avec React, Redux pour le frontend, et utilise une API Laravel  Sanctum pour le backend.",
-    technologies: ["React", "Redux RTK", "Laravel", "Responsive Design" ,"TailwindCSS",], },
+  {
+    title: "Bazaar",
+    image: project4,
+    url: "https://bazar.bazaarya.store",
+    description:
+      "Bazaar est une application web responsive développée pour mon projet de fin d'études (PFE), dédiée à la vente de produits artisanaux marocains. L'application est construite avec React, Redux pour le frontend, et utilise une API Laravel  Sanctum pour le backend.",
+    technologies: [
+      "React",
+      "Redux RTK",
+      "Laravel",
+      "Responsive Design",
+      "TailwindCSS",
+    ],
+  },
+  {
+    title: "Gym Landing Page ",
+    image: landing,
+    url: "https://stupefying-skimmer-be6553.instawp.xyz/",
+    description:
+      "This project is a responsive gym landing page built from scratch using WordPress and Elementor. The design is clean and simple, focused on presenting key information such as gym services, trainer highlights, pricing plans, and a contact form. It works smoothly on all devices and provides a user-friendly experience.",
+    technologies: [
+      "woordpress",
+      "Elementor",
+      "Responsive Design",
+    ],
+  },
 ];
-export const EXPERIENCE=[
+export const EXPERIENCE = [
   {
     year: "2025 - continue",
     role: "développeur",
     company: "RED WALLS",
-    tasks:"J'ai récemment commencé une formation de 3 mois chez RED WALLS en tant que développeur WordPress, en me concentrant sur Elementor, Avada et Rey. Je suis toujours en formation, et je développe mes compétences en frontend et backend.",
+    tasks:
+      "J'ai récemment commencé une formation de 3 mois chez RED WALLS en tant que développeur WordPress, en me concentrant sur Elementor, Avada et Rey. Je suis toujours en formation, et je développe mes compétences en frontend et backend.",
   },
-]
+];
 export const CONTACT = {
   address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
   phoneNo: "+212-669499842",
