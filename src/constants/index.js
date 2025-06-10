@@ -72,7 +72,7 @@ export const EXPERIENCE = [
     role: "développeur",
     company: "RED WALLS",
     tasks:
-      "J'ai récemment commencé une formation de 1 moi chez RED WALLS En tant que développeur WordPress chez Redwalls, j'ai acquis une expérience pratique précieuse dans le développement et la personnalisation de sites web avec Elementor. Mes principales responsabilités comprenaient la configuration de WooCommerce pour garantir une expérience d'achat en ligne fluide et la création de pages de destination attrayantes et adaptées aux besoins des clients. Pour améliorer l'expérience utilisateur, j'ai collaboré avec des thèmes populaires tels qu'Avada et Rey, exploitant leurs fonctionnalités pour créer des designs visuellement attrayants et réactifs. Je me suis également concentré sur l'optimisation des performances et des fonctionnalités du site web grâce à une implémentation efficace du code et aux meilleures pratiques de développement web.",
+      "Développeur WordPress chez RED WALLS (formation d'un mois). Expérience pratique significative dans le développement et la personnalisation de sites web avec Elementor. Compétences en configuration de WooCommerce pour optimiser l'expérience d'achat en ligne. Création de pages de destination engageantes et ciblées selon les besoins des clients. Collaboration avec des thèmes WordPress populaires tels qu'Avada et Rey, en exploitant leurs fonctionnalités pour concevoir des interfaces utilisateur visuellement attrayantes et réactives.",
   },
 ];
 export const CONTACT = {
