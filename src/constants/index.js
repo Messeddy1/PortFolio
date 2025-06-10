@@ -65,18 +65,6 @@ export const PROJECTS = [
       "TailwindCSS",
     ],
   },
-  {
-    title: "Gym Landing Page ",
-    image: landing,
-    url: "https://stupefying-skimmer-be6553.instawp.xyz/",
-    description:
-      "This project is a responsive gym landing page built from scratch using WordPress and Elementor. The design is clean and simple, focused on presenting key information such as gym services, trainer highlights, pricing plans, and a contact form. It works smoothly on all devices and provides a user-friendly experience.",
-    technologies: [
-      "woordpress",
-      "Elementor",
-      "Responsive Design",
-    ],
-  },
 ];
 export const EXPERIENCE = [
   {

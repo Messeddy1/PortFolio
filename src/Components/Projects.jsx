@@ -14,7 +14,7 @@ const Projects = () => {
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="flex mb-4 flex-wrap lg:justify-center">
+          <div key={index} className="flex mb-4  flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
