@@ -24,7 +24,7 @@ En dehors du codage, j'aime rester actif, explorer de nouvelles technologies et 
 export const EDUCATIONS = [
   {
     year: "2023 - 2025",
-    role: "diplôme en développement informatique",
+    role: "diplôme Technicien spécialisé en développement informatique",
     School: "ESET",
   },
   {
