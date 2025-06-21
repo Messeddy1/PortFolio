@@ -1,5 +1,6 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMysql ,SiLaravel ,SiWordpress  } from "react-icons/si";
+import {SiTailwindcss ,SiCss3 , SiMysql ,SiLaravel ,SiWordpress, SiBootstrap  } from "react-icons/si";
+import { TbBrandPhp } from "react-icons/tb";
 import {motion} from "framer-motion"
 
 const iconmotion =(duration)=> ({
@@ -57,6 +58,34 @@ const Technologies = () => {
       className="rounded-2xl border-4 border-neutral-800 p-4">
       <SiWordpress className="text-7xl text-[#00769D]"/>
       </motion.div>
+              <motion.div 
+              variants={iconmotion(1.8)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <TbBrandPhp className="text-7xl text-[#3578B6]"/>
+              </motion.div>
+              <motion.div 
+              variants={iconmotion(1.4)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <SiCss3 className="text-7xl text-[#2965F1]"/>
+              </motion.div>
+              <motion.div 
+              variants={iconmotion(1.2)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <SiTailwindcss className="text-7xl text-[#38BDF8]"/>
+              </motion.div>
+              <motion.div 
+              variants={iconmotion(1)}
+              initial="initial"
+              animate="animate"
+              className="rounded-2xl border-4 border-neutral-800 p-4">
+              <SiBootstrap  className="text-7xl text-[#8011F5]"/>
+              </motion.div>
       </motion.div>
     </div>
   );
