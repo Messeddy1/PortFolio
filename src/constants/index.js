@@ -29,7 +29,7 @@ export const EDUCATIONS = [
   },
   {
     year: "2021 - 2022",
-    role: "baccalauréat",
+    role: "baccalauréat science physique",
     School: "Abo Abas Esebti ",
   },
 ];
