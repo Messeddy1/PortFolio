@@ -1,7 +1,6 @@
 import project1 from "../assets/projects/project1.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/bazaar.png";
-import landing from "../assets/projects/landing.png";
 export const HERO_CONTENT = `Développeur web enthousiaste et motivé, passionné par la création de solutions digitales modernes et performantes.
 J’aime apprendre, relever de nouveaux défis, et transformer des idées en projets concrets.
 
