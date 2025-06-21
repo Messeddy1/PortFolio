@@ -68,7 +68,7 @@ export const PROJECTS = [
 ];
 export const EXPERIENCE = [
   {
-    year: "2025 - continue",
+    year: "2025 - juin",
     role: "développeur",
     company: "RED WALLS",
     tasks:
