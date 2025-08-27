@@ -55,7 +55,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center my-6">
         <a
           href="https://github.com/Messeddy1"
           target="_blank"
