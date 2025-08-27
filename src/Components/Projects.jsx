@@ -21,8 +21,11 @@ const Projects = () => {
               transition={{ duration: 1.5 }}
               className="w-full lg:w-1/4"
             >
-              <a href={project.url} rel="noopener noreferrer" target={project.url === "#" ? "" : "_blank"}>
-              
+              <a
+                href={project.url}
+                rel="noopener noreferrer"
+                target={project.url === "#" ? "" : "_blank"}
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -51,6 +54,16 @@ const Projects = () => {
             </motion.div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center mt-8">
+        <a
+          href="https://github.com/Messeddy1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200"
+        >
+          Afficher tout sur GitHub
+        </a>
       </div>
     </div>
   );

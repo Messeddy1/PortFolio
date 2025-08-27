@@ -9,7 +9,7 @@ export default function Experience() {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        Expérience
+        Expériences professionnelles
       </motion.h2>
       <div>
         {EXPERIENCE.map((experience, index) => (
@@ -39,6 +39,7 @@ export default function Experience() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }

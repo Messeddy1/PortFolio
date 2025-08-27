@@ -10,7 +10,7 @@ Mon objectif est de construire des produits web utiles, accessibles et pensés p
 `;
 export const ABOUT_TEXT = `
 Je suis un développeur full stack dévoué et polyvalent, passionné par la création d'applications web efficaces et conviviales.
-J'ai acquis de solides compétences en développement web, notamment en React.js, Tailwind CSS, Bootstrap, WordPress, Laravel, PHP et MySQL.
+J'ai acquis de solides compétences en développement web, notamment en React.js, Tailwind CSS, Bootstrap, Laravel, PHP et MySQL.
 
 Mon parcours dans le développement web a commencé par une grande curiosité pour le fonctionnement des choses, évoluant vers une carrière où je m'efforce continuellement d'apprendre et de m'adapter à de nouveaux défis.
 Je m'épanouis dans des environnements collaboratifs et j'apprécie résoudre des problèmes complexes pour fournir des solutions de haute qualité.
@@ -23,12 +23,12 @@ En dehors du codage, j'aime rester actif, explorer de nouvelles technologies et 
 export const EDUCATIONS = [
   {
     year: "2023 - 2025",
-    role: "diplôme Technicien spécialisé en développement informatique",
+    role: "Diplôme Technicien spécialisé en développement informatique",
     School: "ESET",
   },
   {
     year: "2021 - 2022",
-    role: "baccalauréat science physique",
+    role: "Baccalauréat sciences physiques",
     School: "Abo Abas Esebti ",
   },
 ];
@@ -67,15 +67,51 @@ export const PROJECTS = [
 ];
 export const EXPERIENCE = [
   {
-    year: "2025 - juin",
-    role: "développeur",
+    year: "August 2025",
+    role: "Stage PFE",
+    company: "Webcinq",
+    tasks:
+      "Stage de fin d'études (PFE) : Participation à un projet de développement web complet, intégration de technologies modernes et gestion de projet en équipe.",
+  },
+  // RED WALLS (original)
+  {
+    year: "Juin 2025",
+    role: "Stage PFE",
     company: "RED WALLS",
     tasks:
-      "Développeur WordPress chez RED WALLS (formation d'un mois). Expérience pratique significative dans le développement et la personnalisation de sites web avec Elementor. Compétences en configuration de WooCommerce pour optimiser l'expérience d'achat en ligne. Création de pages de destination engageantes et ciblées selon les besoins des clients. Collaboration avec des thèmes WordPress populaires tels qu'Avada et Rey, en exploitant leurs fonctionnalités pour concevoir des interfaces utilisateur visuellement attrayantes et réactives.",
+      "Stage de fin d'études (PFE) : Participation à un projet de développement WordPress avancé, gestion de l'intégration de plugins et optimisation des performances.",
   },
 ];
 export const CONTACT = {
   address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
   phoneNo: "+212-669499842",
   email: "mohamedesseddyqqy@gmail.com",
+  gmailLink: "mailto:mohamedesseddyqqy@gmail.com",
 };
+// Liste des compétences principales
+export const TECHNOLOGIES = [
+  {
+    name: "React.js",
+    icon: "react",
+  },
+  {
+    name: "Laravel",
+    icon: "laravel",
+  },
+  {
+    name: "Bootstrap",
+    icon: "bootstrap",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "tailwind",
+  },
+  {
+    name: "PHP",
+    icon: "php",
+  },
+  {
+    name: "MySQL",
+    icon: "mysql",
+  },
+];

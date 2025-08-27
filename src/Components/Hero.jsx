@@ -18,36 +18,48 @@ const Hero = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <motion.h1 variants={container(0)}
-            initial="hiddin"
-            animate="visible"
-
-            className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl">
+            <motion.h1
+              variants={container(0)}
+              initial="hiddin"
+              animate="visible"
+              className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
+            >
               Mohamed Esseddyqy
             </motion.h1>
-            <motion.span 
-            variants={container(0.5)}
-            initial="hiddin"
-            animate="visible"
-            className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">
-            Développeur Full Stack
+            <motion.span
+              variants={container(0.5)}
+              initial="hiddin"
+              animate="visible"
+              className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+            >
+              Développeur Full Stack
             </motion.span>
-            <motion.p 
-            variants={container(1)}
-            initial="hiddin"
-            animate="visible"
-            className="my-2 font-medium py-6 max-w-xl tracking-tighter">
+            <motion.p
+              variants={container(1)}
+              initial="hiddin"
+              animate="visible"
+              className="my-2 font-medium py-6 max-w-xl tracking-tighter"
+            >
               {HERO_CONTENT}
             </motion.p>
+            <a
+              href="/cv.pdf"
+              download
+              className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 text-lg font-semibold"
+            >
+              Télécharger mon CV
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
-            <motion.img 
-            initial={{x:100,opacity:0}}
-            animate={{x:0, opacity:1}}
-            transition={{duration: 1,delay:1.2}}
-            src={profilePic} alt="profile" />
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              src={profilePic}
+              alt="profile"
+            />
           </div>
         </div>
       </div>
