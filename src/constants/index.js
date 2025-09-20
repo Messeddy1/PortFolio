@@ -86,7 +86,7 @@ export const CONTACT = {
   address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
   phoneNo: "+212-669499842",
   email: "mohamedesseddyqqy@gmail.com",
-  gmailLink: "mailto:mohamedesseddyqqy@gmail.com",
+  gmailLink: "mohamedesseddyqqy@gmail.com",
 };
 // Liste des compétences principales
 export const TECHNOLOGIES = [

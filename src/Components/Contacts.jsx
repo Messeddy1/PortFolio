@@ -32,10 +32,10 @@ const Contacts = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1.5 }}
-          href={CONTACT.gmailLink}
-          className="border-b text-blue-400 hover:text-blue-600"
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT.gmailLink}&su=Hello&body=I want to contact you`}
           target="_blank"
           rel="noopener noreferrer"
+          className="border-b text-blue-400 hover:text-blue-600"
           aria-label="Envoyer un email via Gmail"
         >
           <span className="font-semibold">Email :</span> {CONTACT.email}
