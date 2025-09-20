@@ -1,70 +1,130 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.jpg";
 import { motion } from "framer-motion";
-const container = (delay) => ({
-  hiddin: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.5, delay: delay },
-  },
-});
+import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
+
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-3.5">
-      <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
-            <motion.h1
-              variants={container(0)}
-              initial="hiddin"
-              animate="visible"
-              className="pb-16 text-4xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
-            >
+    <div className="relative">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="flex flex-col lg:flex-row items-center justify-between gap-12"
+      >
+        <div className="flex-1 text-center lg:text-left">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mb-6"
+          >
+            <h2 className="text-primary-400 font-medium mb-2">Hello, I'm</h2>
+            <h1 className="text-4xl lg:text-6xl font-display font-bold mb-4">
               Mohamed Esseddyqy
-            </motion.h1>
-            <motion.span
-              variants={container(0.5)}
-              initial="hiddin"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-300 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
-            >
-              Développeur Full Stack
-            </motion.span>
-            <motion.p
-              variants={container(1)}
-              initial="hiddin"
-              animate="visible"
-              className="my-2 font-medium py-6 max-w-xl tracking-tighter"
-            >
-              {HERO_CONTENT}
-            </motion.p>
+            </h1>
+            <div className="relative inline-block">
+              <span className="text-2xl lg:text-3xl font-display bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
+                Full Stack Developer
+              </span>
+            </div>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-secondary-400 max-w-xl mx-auto lg:mx-0 mb-8 text-lg"
+          >
+            {HERO_CONTENT}
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+          >
             <a
               href="/cv.pdf"
               download
-              className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200 text-lg font-semibold"
+              className="primary-button flex items-center gap-2 w-full sm:w-auto justify-center"
             >
-              Télécharger mon CV
+              Download CV
             </a>
-          </div>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://github.com/Messeddy1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button flex items-center gap-2 py-2 px-4"
+              >
+                <FaGithub className="w-5 h-5" />
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mohamed-esseddyqy-640552246/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="secondary-button flex items-center gap-2 py-2 px-4"
+              >
+                <FaLinkedin className="w-5 h-5" />
+                LinkedIn
+              </a>
+            </div>
+          </motion.div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative w-full max-w-sm lg:max-w-md"
+        >
+          <div className="relative z-10">
+            <img
               src={profilePic}
-              alt="profile"
+              alt="Mohamed Esseddyqy"
+              className="w-full h-auto rounded-2xl shadow-2xl"
             />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary-600/20 to-transparent"></div>
           </div>
-        </div>
-      </div>
+          <div className="absolute -inset-4 bg-gradient-to-tr from-primary-600/20 to-transparent rounded-2xl blur-2xl -z-10"></div>
+        </motion.div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <button
+          onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+          className="animate-bounce text-secondary-400 hover:text-primary-400 transition-colors"
+        >
+          <FaArrowDown className="w-6 h-6" />
+        </button>
+      </motion.div>
     </div>
   );
+  //           </a>
+  //         </div>
+  //       </div>
+  //       <div className="w-full lg:w-1/2 lg:p-8">
+  //         <div className="flex justify-center">
+  //           <motion.img
+  //             initial={{ x: 100, opacity: 0 }}
+  //             animate={{ x: 0, opacity: 1 }}
+  //             transition={{ duration: 1, delay: 1.2 }}
+  //             src={profilePic}
+  //             alt="profile"
+  //           />
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 };
 
 export default Hero;

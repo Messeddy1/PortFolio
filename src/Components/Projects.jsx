@@ -1,71 +1,110 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { PROJECTS } from "../constants";
+import { FaArrowRight } from "react-icons/fa";
+import { useState } from "react";
+import ProjectDetails from "./ProjectDetails";
+
+const ProjectCard = ({ project, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const truncatedDescription =
+    project.description.length > 100
+      ? project.description.substring(0, 100) + "..."
+      : project.description;
+
+  return (
+    <motion.div
+      whileHover={{ y: -5 }}
+      className="bg-secondary-800/50 backdrop-blur-sm border border-secondary-700 rounded-xl overflow-hidden transition-colors duration-200 group cursor-pointer"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
+    >
+      <div className="relative aspect-video overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+        />
+        <div
+          className={`absolute inset-0 bg-primary-900/80 flex items-center justify-center gap-4 transition-opacity duration-300 ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <button className="px-4 py-2 bg-primary-600 text-white rounded-lg flex items-center gap-2 hover:bg-primary-700 transition-colors">
+            View Details <FaArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
+      <div className="p-6">
+        <h3 className="text-xl font-display font-semibold text-secondary-100 mb-2 group-hover:text-primary-400 transition-colors">
+          {project.title}
+        </h3>
+        <p className="text-secondary-400 text-sm mb-4">
+          {truncatedDescription}
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {project.technologies.slice(0, 3).map((tech, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 text-xs font-medium bg-secondary-700/50 text-primary-400 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+          {project.technologies.length > 3 && (
+            <span className="px-2 py-1 text-xs font-medium bg-secondary-700/50 text-primary-400 rounded-full">
+              +{project.technologies.length - 3} more
+            </span>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
   return (
-    <div className="border border-neutral-900 pb-4">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
-      >
-        Projets
-      </motion.h2>
-      <div>
-        {PROJECTS.map((project, index) => (
-          <div key={index} className="flex mb-4  flex-wrap lg:justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1.5 }}
-              className="w-full lg:w-1/4"
-            >
-              <a
-                href={project.url}
-                rel="noopener noreferrer"
-                target={project.url === "#" ? "" : "_blank"}
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  width={150}
-                  height={150}
-                  className="mb-6 rounded w-full lg:w-80"
-                />
-              </a>
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1.5 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h6 className="mb-2 font-semibold">{project.title} </h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2  rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-                >
-                  {tech}
-                </span>
-              ))}
-            </motion.div>
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center my-6">
-        <a
-          href="https://github.com/Messeddy1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-6 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-colors duration-200"
+    <>
+      <div className="py-10">
+        <div className="text-center mb-16">
+          <h2 className="section-title">Featured Projects</h2>
+          <p className="section-subtitle mx-auto">
+            Explore my latest work and personal projects
+          </p>
+        </div>
+
+        <motion.div
+          layout
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          Afficher tout sur GitHub
-        </a>
+          {PROJECTS.map((project, index) => (
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ProjectCard
+                project={project}
+                onClick={() => setSelectedProject(project)}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-    </div>
+
+      <AnimatePresence>
+        {selectedProject && (
+          <ProjectDetails
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

@@ -72,7 +72,7 @@ const Technologies = () => {
         >
           <SiTailwindcss className="text-7xl text-[#38BDF8]" />
           <div className="mt-2 text-center text-lg font-semibold">
-            Tailwind CSS
+            Tailwind
           </div>
         </motion.div>
         <motion.div
