@@ -1,15 +1,25 @@
 import project1 from "../assets/projects/project1.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/bazaar.png";
-import landing from "../assets/projects/landing.png";
-
+import project2 from "../assets/projects/ResumePhoto/AI-Resume-Home.png";
+import vedioResume from '../assets/projects/ResumePhoto/ResumeVedio.mp4'
+import resume1 from "../assets/projects/ResumePhoto/AI-Resume-Home2.png";
+import resume2 from "../assets/projects/ResumePhoto/AI-Resume-Login.png";
+import resume3 from "../assets/projects/ResumePhoto/AI-Resume-Dashboard.png";
+import resume4 from "../assets/projects/ResumePhoto/AI-Resume-create-name-of-rasume.png";
+import resume5 from "../assets/projects/ResumePhoto/Reed-Woods-Info.png";
+import resume6 from "../assets/projects/ResumePhoto/education.png";
+import resume7 from "../assets/projects/ResumePhoto/lang.png";
+import resume8 from "../assets/projects/ResumePhoto/professional-Experience.png";
+import resume9 from "../assets/projects/ResumePhoto/skills.png";
+import resume10 from "../assets/projects/ResumePhoto/summary.png";
 // export const PROJECTS = [
 //   {
 //     title: "E-Commerce Platform",
 //     description:
 //       "A modern e-commerce platform built with React and Node.js. Features include product search, filtering, cart management, user authentication, and secure payment processing.",
-//     longDescription: `A comprehensive e-commerce solution that provides users with a seamless shopping experience. 
-//     The platform includes advanced features such as real-time inventory management, secure payment processing through Stripe, 
+//     longDescription: `A comprehensive e-commerce solution that provides users with a seamless shopping experience.
+//     The platform includes advanced features such as real-time inventory management, secure payment processing through Stripe,
 //     and a responsive design that works perfectly across all devices.`,
 //     image: project4,
 //     technologies: [
@@ -28,7 +38,7 @@ import landing from "../assets/projects/landing.png";
 //     title: "Portfolio Website",
 //     description:
 //       "A modern and responsive portfolio website showcasing my projects and skills. Built with React and Tailwind CSS.",
-//     longDescription: `A carefully crafted portfolio website that highlights my work and skills. 
+//     longDescription: `A carefully crafted portfolio website that highlights my work and skills.
 //     The site features smooth animations, responsive design, and optimized performance.`,
 //     image: project1,
 //     technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
@@ -39,7 +49,7 @@ import landing from "../assets/projects/landing.png";
 //     title: "Task Management App",
 //     description:
 //       "A collaborative task management application with real-time updates and team features.",
-//     longDescription: `A powerful task management solution that helps teams stay organized and productive. 
+//     longDescription: `A powerful task management solution that helps teams stay organized and productive.
 //     Features include real-time updates, task assignments, due dates, priority levels, and team collaboration tools.`,
 //     image: project3,
 //     technologies: ["React", "Firebase", "Material-UI", "Redux"],
@@ -50,7 +60,7 @@ import landing from "../assets/projects/landing.png";
 //     title: "Landing Page Generator",
 //     description:
 //       "A drag-and-drop landing page builder with customizable templates and export functionality.",
-//     longDescription: `An intuitive landing page builder that allows users to create professional landing pages without coding. 
+//     longDescription: `An intuitive landing page builder that allows users to create professional landing pages without coding.
 //     Features include customizable templates, drag-and-drop interface, and export to HTML/CSS.`,
 //     image: landing,
 //     technologies: ["Vue.js", "Nuxt.js", "Node.js", "PostgreSQL"],
@@ -104,7 +114,9 @@ export const PROJECTS = [
     ou les requêtes échouées, et son design réactif garantit un fonctionnement fluide sur les ordinateurs de bureau et les 
     appareils mobiles.`,
     technologies: ["React", "Redux", "CSS", "Weather API"],
-    github: "https://github.com/yourusername/weather-app",
+    github: "https://github.com/Messeddy1/weather-app",
+    galleryImages: [],
+    video: null, // Add video URL here if you have a demo video
   },
   {
     title: "Portfolio",
@@ -118,6 +130,7 @@ export const PROJECTS = [
     tous les appareils. Le projet met en avant des réalisations clés et intègre des principes de design propres et efficaces.`,
     technologies: ["React", "Framer Motion", "TailwindCSS", "Vite"],
     github: "https://github.com/Messeddy1/PortFolio",
+    galleryImages: [],
   },
   {
     title: "Bazaar",
@@ -137,7 +150,37 @@ export const PROJECTS = [
       "MySQL",
       "Stripe",
     ],
-    github: "https://github.com/yourusername/bazaar",
+    github: "https://github.com/Messeddy1/project_Bazaar_front_end",
+    galleryImages: [], 
+    video: null, 
+  },
+  {
+    title: "Resume Builder",
+    image: project2,
+    url: "#",
+    description:
+      "Application web innovante pour générer des CV personnalisés avec IA, utilisant React.js, Clerk et Strapi.",
+    longDescription: `J’ai développé une application web innovante permettant de générer automatiquement des résumés et descriptions personnalisées grâce à l’intelligence artificielle.
+L’application est construite avec React.js pour le front-end, intégrée avec Clerk afin de gérer l’authentification sécurisée des utilisateurs, et repose sur Strapi comme back-end pour la gestion des données et du contenu.
+
+L’outil offre à l’utilisateur la possibilité de créer un CV professionnel en quelques clics, d’obtenir des suggestions de contenu optimisées par IA, et de télécharger ou partager facilement son CV au format souhaité.
+
+Ce projet met en valeur mes compétences en développement full-stack (React.js, API, Strapi), en intégration de solutions d’authentification modernes (Clerk), et en exploitation de l’IA pour améliorer l’expérience utilisateur.`,
+    technologies: ["React.js", "Clerk", "Strapi", "TailwindCSS", "OpenAI API"],
+    github: "https://github.com/Messeddy1/resume_ai",
+    galleryImages: [
+      resume1,
+      resume2,
+      resume3,
+      resume4,
+      resume5,
+      resume6,
+      resume7,
+      resume8,
+      resume9,
+      resume10,
+    ],
+    video: vedioResume,
   },
 ];
 export const EXPERIENCE = [

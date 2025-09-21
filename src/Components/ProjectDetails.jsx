@@ -5,14 +5,11 @@ import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 const ProjectDetails = ({ project, onClose }) => {
   const [activeImage, setActiveImage] = useState(0);
 
-  // Generate placeholder images for the project gallery
-  const galleryImages = [
-    project.image, // Main image
-    `https://picsum.photos/800/600?random=1`,
-    `https://picsum.photos/800/600?random=2`,
-    `https://picsum.photos/800/600?random=3`,
-    `https://picsum.photos/800/600?random=4`,
-  ];
+  // Use gallery images from project data or fallback to main image
+  const galleryImages =
+    project.galleryImages?.length > 0
+      ? [project.image, ...project.galleryImages]
+      : [project.image];
 
   return (
     <motion.div
@@ -54,6 +51,22 @@ const ProjectDetails = ({ project, onClose }) => {
           </div>
         </div>
 
+        {/* Video Section (if available) */}
+        {project.video && (
+          <div className="mb-8">
+            <div className="relative aspect-video overflow-hidden rounded-lg">
+              <video
+                src={project.video}
+                controls
+                className="w-full h-full object-contain bg-black"
+                poster={project.image}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        )}
+
         {/* Image gallery */}
         <div className="mb-8">
           <div className="relative aspect-video overflow-hidden rounded-lg mb-4">
@@ -94,39 +107,20 @@ const ProjectDetails = ({ project, onClose }) => {
             <h3 className="text-xl font-semibold text-secondary-100 mb-2">
               Project Overview
             </h3>
-            <p className="text-secondary-300 leading-relaxed">
-              {project.description}
-            </p>
-            <p className="text-secondary-300 leading-relaxed mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <p className="text-secondary-300 leading-relaxed whitespace-pre-line">
+              {project.longDescription}
             </p>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold text-secondary-100 mb-2">
-              Key Features
+              Technologies Used
             </h3>
             <ul className="list-disc list-inside space-y-2 text-secondary-300">
-              <li>Responsive design across all device sizes</li>
-              <li>Interactive user interface with smooth animations</li>
-              <li>Integration with multiple external APIs</li>
-              <li>Real-time data updates and notifications</li>
-              <li>Advanced search and filtering capabilities</li>
+              {project.technologies.map((tech, index) => (
+                <li key={index}>{tech}</li>
+              ))}
             </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-secondary-100 mb-2">
-              Technical Details
-            </h3>
-            <p className="text-secondary-300 leading-relaxed">
-              The project was built using modern web technologies and best
-              practices. Special attention was paid to performance optimization,
-              accessibility, and code maintainability.
-            </p>
           </div>
 
           {/* Project links */}
