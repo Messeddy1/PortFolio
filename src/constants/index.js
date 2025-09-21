@@ -2,7 +2,6 @@ import project1 from "../assets/projects/project1.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/bazaar.png";
 import project2 from "../assets/projects/ResumePhoto/AI-Resume-Home.png";
-import vedioResume from '../assets/projects/ResumePhoto/ResumeVedio.mp4'
 import resume1 from "../assets/projects/ResumePhoto/AI-Resume-Home2.png";
 import resume2 from "../assets/projects/ResumePhoto/AI-Resume-Login.png";
 import resume3 from "../assets/projects/ResumePhoto/AI-Resume-Dashboard.png";
@@ -116,7 +115,6 @@ export const PROJECTS = [
     technologies: ["React", "Redux", "CSS", "Weather API"],
     github: "https://github.com/Messeddy1/weather-app",
     galleryImages: [],
-    video: null, // Add video URL here if you have a demo video
   },
   {
     title: "Portfolio",
@@ -152,7 +150,6 @@ export const PROJECTS = [
     ],
     github: "https://github.com/Messeddy1/project_Bazaar_front_end",
     galleryImages: [], 
-    video: null, 
   },
   {
     title: "Resume Builder",
@@ -180,7 +177,6 @@ Ce projet met en valeur mes compétences en développement full-stack (React.js,
       resume9,
       resume10,
     ],
-    video: vedioResume,
   },
 ];
 export const EXPERIENCE = [

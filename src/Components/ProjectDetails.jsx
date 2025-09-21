@@ -50,23 +50,6 @@ const ProjectDetails = ({ project, onClose }) => {
             ))}
           </div>
         </div>
-
-        {/* Video Section (if available) */}
-        {project.video && (
-          <div className="mb-8">
-            <div className="relative aspect-video overflow-hidden rounded-lg">
-              <video
-                src={project.video}
-                controls
-                className="w-full h-full object-contain bg-black"
-                poster={project.image}
-              >
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-        )}
-
         {/* Image gallery */}
         <div className="mb-8">
           <div className="relative aspect-video overflow-hidden rounded-lg mb-4">
