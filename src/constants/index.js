@@ -154,7 +154,7 @@ export const PROJECTS = [
   {
     title: "Resume Builder",
     image: project2,
-    url: "#",
+    url: "https://drive.google.com/file/d/1Cg9rw6mex-qGZmNt6g5ovQNWhShx4EG4/view?usp=drive_link",
     description:
       "Application web innovante pour générer des CV personnalisés avec IA, utilisant React.js, Clerk et Strapi.",
     longDescription: `J’ai développé une application web innovante permettant de générer automatiquement des résumés et descriptions personnalisées grâce à l’intelligence artificielle.
