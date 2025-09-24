@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project1.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/bazaar.png";
+import Project5 from "../assets/projects/LocationCars/locationHome.png";
 import project2 from "../assets/projects/ResumePhoto/AI-Resume-Home.png";
 import resume1 from "../assets/projects/ResumePhoto/AI-Resume-Home2.png";
 import resume2 from "../assets/projects/ResumePhoto/AI-Resume-Login.png";
@@ -12,61 +13,10 @@ import resume7 from "../assets/projects/ResumePhoto/lang.png";
 import resume8 from "../assets/projects/ResumePhoto/professional-Experience.png";
 import resume9 from "../assets/projects/ResumePhoto/skills.png";
 import resume10 from "../assets/projects/ResumePhoto/summary.png";
-// export const PROJECTS = [
-//   {
-//     title: "E-Commerce Platform",
-//     description:
-//       "A modern e-commerce platform built with React and Node.js. Features include product search, filtering, cart management, user authentication, and secure payment processing.",
-//     longDescription: `A comprehensive e-commerce solution that provides users with a seamless shopping experience.
-//     The platform includes advanced features such as real-time inventory management, secure payment processing through Stripe,
-//     and a responsive design that works perfectly across all devices.`,
-//     image: project4,
-//     technologies: [
-//       "React",
-//       "Node.js",
-//       "MongoDB",
-//       "Express",
-//       "Stripe",
-//       "Redux",
-//       "Tailwind CSS",
-//     ],
-//     github: "https://github.com/yourusername/ecommerce",
-//     url: "https://your-ecommerce.com",
-//   },
-//   {
-//     title: "Portfolio Website",
-//     description:
-//       "A modern and responsive portfolio website showcasing my projects and skills. Built with React and Tailwind CSS.",
-//     longDescription: `A carefully crafted portfolio website that highlights my work and skills.
-//     The site features smooth animations, responsive design, and optimized performance.`,
-//     image: project1,
-//     technologies: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-//     github: "https://github.com/yourusername/portfolio",
-//     url: "https://your-portfolio.com",
-//   },
-//   {
-//     title: "Task Management App",
-//     description:
-//       "A collaborative task management application with real-time updates and team features.",
-//     longDescription: `A powerful task management solution that helps teams stay organized and productive.
-//     Features include real-time updates, task assignments, due dates, priority levels, and team collaboration tools.`,
-//     image: project3,
-//     technologies: ["React", "Firebase", "Material-UI", "Redux"],
-//     github: "https://github.com/yourusername/task-manager",
-//     url: "https://your-task-app.com",
-//   },
-//   {
-//     title: "Landing Page Generator",
-//     description:
-//       "A drag-and-drop landing page builder with customizable templates and export functionality.",
-//     longDescription: `An intuitive landing page builder that allows users to create professional landing pages without coding.
-//     Features include customizable templates, drag-and-drop interface, and export to HTML/CSS.`,
-//     image: landing,
-//     technologies: ["Vue.js", "Nuxt.js", "Node.js", "PostgreSQL"],
-//     github: "https://github.com/yourusername/landing-builder",
-//     url: "https://your-landing-builder.com",
-//   },
-// ];
+import location1 from "../assets/projects/LocationCars/dashboardLocation.png";
+import location2 from "../assets/projects/LocationCars/filterLocationProject.png";
+import location3 from "../assets/projects/LocationCars/rentalLocation.png";
+
 export const HERO_CONTENT = `Développeur web enthousiaste et motivé, passionné par la création de solutions digitales modernes et performantes.
 J’aime apprendre, relever de nouveaux défis, et transformer des idées en projets concrets.
 
@@ -149,7 +99,7 @@ export const PROJECTS = [
       "Stripe",
     ],
     github: "https://github.com/Messeddy1/project_Bazaar_front_end",
-    galleryImages: [], 
+    galleryImages: [],
   },
   {
     title: "Resume Builder",
@@ -177,6 +127,25 @@ Ce projet met en valeur mes compétences en développement full-stack (React.js,
       resume9,
       resume10,
     ],
+  },
+  {
+    title: "Location Voiture",
+    image: Project5,
+    url: "https://drive.google.com/file/d/1I6kpAsMuMC_633cLqGnZoC49rAhpJMm1/view?usp=sharing",
+    description:
+      "Mon application De Voutuer est une plateforme moderne de location et de réservation de voitures, développée avec Laravel API pour la partie back-end et React.js pour le front-end.",
+    longDescription: `Mon application De Voutuer est une plateforme moderne de location et de réservation de voitures, développée avec Laravel API pour la partie back-end et React.js pour le front-end.
+
+L’interface utilisateur est conçue avec Tailwind CSS, ce qui offre un design élégant, réactif et moderne.
+Pour la gestion des états de l’application, j’ai utilisé Context API combiné avec Axios afin de gérer efficacement les appels API et la communication entre le client et le serveur.
+
+Cette application permet aux utilisateurs de parcourir les voitures disponibles, de réserver en ligne, et aux administrateurs de gérer facilement le parc automobile et les réservations via une interface intuitive.
+
+C’est une solution complète qui met l’accent sur la performance, l’expérience utilisateur et la simplicité d’utilisation.`,
+
+    technologies: ["React.js", "Laravel", "TailwindCSS", "MySQL", "Axios"],
+    github: "https://github.com/Messeddy1/loacation",
+    galleryImages: [location1, location2, location3],
   },
 ];
 export const EXPERIENCE = [
