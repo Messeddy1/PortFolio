@@ -36,7 +36,7 @@ const Technologies = () => {
         className="flex flex-wrap justify-center items-center gap-4"
       >
         <motion.div
-          variants={iconmotion(2.2)}
+          variants={iconmotion(0.4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -45,7 +45,7 @@ const Technologies = () => {
           <div className="mt-2 text-center text-lg font-semibold">React.js</div>
         </motion.div>
         <motion.div
-          variants={iconmotion(2)}
+          variants={iconmotion(0.6)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -54,7 +54,7 @@ const Technologies = () => {
           <div className="mt-2 text-center text-lg font-semibold">Laravel</div>
         </motion.div>
         <motion.div
-          variants={iconmotion(1.8)}
+          variants={iconmotion(0.8)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -65,7 +65,7 @@ const Technologies = () => {
           </div>
         </motion.div>
         <motion.div
-          variants={iconmotion(1.4)}
+          variants={iconmotion(1)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -85,12 +85,12 @@ const Technologies = () => {
           <div className="mt-2 text-center text-lg font-semibold">PHP</div>
         </motion.div>
         <motion.div
-          variants={iconmotion(1)}
+          variants={iconmotion(1.4)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMysql className="text-7xl text-[#00618A]" />
+          <SiMysql className="text-7xl text-[#0875a4]" />
           <div className="mt-2 text-center text-lg font-semibold">MySQL</div>
         </motion.div>
       </motion.div>
