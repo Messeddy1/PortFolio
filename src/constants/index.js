@@ -17,24 +17,22 @@ import location1 from "../assets/projects/LocationCars/dashboardLocation.png";
 import location2 from "../assets/projects/LocationCars/filterLocationProject.png";
 import location3 from "../assets/projects/LocationCars/rentalLocation.png";
 
-export const HERO_CONTENT = `Développeur web enthousiaste et motivé, passionné par la création de solutions digitales modernes et performantes.
-J’aime apprendre, relever de nouveaux défis, et transformer des idées en projets concrets.
+export const HERO_CONTENT = `Développeur web débutant et motivé, passionné par la création de solutions digitales modernes et performantes.
+Avec déjà 3 mois d'expérience dans le développement web, je suis à la recherche de mon premier emploi ou stage rémunéré pour continuer à apprendre et mettre mes compétences en pratique.
 
 Je me concentre sur l'écriture d'un code propre, réutilisable et évolutif pour garantir une expérience utilisateur fluide et une performance optimale.
-Mon objectif est de construire des produits web utiles, accessibles et pensés pour les utilisateurs.
-
+Mon objectif est de contribuer à des projets web utiles, accessibles et pensés pour les utilisateurs.
 `;
+
 export const ABOUT_TEXT = `
-Je suis un développeur full stack dévoué et polyvalent, passionné par la création d'applications web efficaces et conviviales.
-J'ai acquis de solides compétences en développement web, notamment en React.js, Tailwind CSS, Bootstrap, Laravel, PHP et MySQL.
+Je suis un développeur full stack débutant, passionné par la création d'applications web efficaces et conviviales.
+En 3 mois d'expérience pratique, j'ai acquis des compétences en React.js, Tailwind CSS, Bootstrap, Laravel, PHP et MySQL, et je suis impatient de les mettre en application dans un environnement professionnel.
 
-Mon parcours dans le développement web a commencé par une grande curiosité pour le fonctionnement des choses, évoluant vers une carrière où je m'efforce continuellement d'apprendre et de m'adapter à de nouveaux défis.
-Je m'épanouis dans des environnements collaboratifs et j'apprécie résoudre des problèmes complexes pour fournir des solutions de haute qualité.
+Mon parcours a commencé par une curiosité pour le fonctionnement des technologies, et aujourd'hui je cherche à rejoindre une équipe pour continuer à apprendre, relever de nouveaux défis et contribuer à des projets concrets.
 
-En dehors du codage, j'aime rester actif, explorer de nouvelles technologies et contribuer à des projets open-source.
-
-
+En dehors du codage, j'aime explorer de nouvelles technologies, apprendre continuellement et m'impliquer dans des projets open-source pour développer mon expérience.
 `;
+
 
 export const EDUCATIONS = [
   {
@@ -149,6 +147,14 @@ C’est une solution complète qui met l’accent sur la performance, l’expér
   },
 ];
 export const EXPERIENCE = [
+  {
+    year: "October 2025 - Présent",
+    role: "Développeur Web Stagiaire",
+    company: "IntegralTech",
+    tasks:
+      "Participation active à des projets de développement web, apprentissage de nouvelles technologies, contribution au code côté front-end et back-end, et collaboration au sein d'une équipe professionnelle.",
+  },
+
   {
     year: "August 2025",
     role: "Stage PFE",
