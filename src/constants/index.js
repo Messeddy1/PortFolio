@@ -238,7 +238,7 @@ export const CONTACT = {
   email: "mohamedesseddyqqy@gmail.com",
   gmailLink: "mohamedesseddyqqy@gmail.com",
 };
-// Liste des compétences principales
+
 export const TECHNOLOGIES = [
   {
     name: "React.js",
