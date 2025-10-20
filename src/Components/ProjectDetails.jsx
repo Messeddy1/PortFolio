@@ -110,13 +110,22 @@ const ProjectDetails = ({ project, onClose }) => {
           <div className="flex flex-wrap gap-4 pt-6">
             {project.github && (
               <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-secondary-700 hover:bg-secondary-600 text-secondary-100 rounded-lg transition-colors"
+                href={project.github !== "#" ? project.github : undefined}
+                onClick={(e) => project.github === "#" && e.preventDefault()}
+                aria-disabled={project.github === "#"}
+                target={project.github !== "#" ? "_blank" : undefined}
+                rel={project.github !== "#" ? "noopener noreferrer" : undefined}
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors
+    ${
+      project.github !== "#"
+        ? "bg-secondary-700 hover:bg-secondary-600 text-secondary-100"
+        : "bg-gray-400 text-gray-200 cursor-not-allowed"
+    }`}
               >
                 <FaGithub className="w-5 h-5" />
-                View Source
+                {project.github !== "#"
+                  ? "View Source"
+                  : "This Project Is Private"}
               </a>
             )}
             {project.url && project.url !== "#" && (
