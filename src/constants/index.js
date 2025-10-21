@@ -234,7 +234,7 @@ export const EXPERIENCE = [
 ];
 export const CONTACT = {
   address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
-  phoneNo: "+212-669499842",
+  phoneNo: "+212-682389317.",
   email: "mohamedesseddyqqy@gmail.com",
   gmailLink: "mohamedesseddyqqy@gmail.com",
 };
