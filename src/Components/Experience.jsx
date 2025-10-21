@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 export default function Experience() {
   return (
     <div className="border-b border-neutral-900 pb-24">
-      <motion.h2
+      <motion.h3
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
         Expériences professionnelles
-      </motion.h2>
+      </motion.h3>
       <div>
         {EXPERIENCE.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
@@ -28,12 +28,12 @@ export default function Experience() {
               transition={{ duration: 1.5 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h3 className="mb-2 font-semibold">
+              <h4 className="mb-2 font-semibold">
                 {experience.role} -{" "}
-                <span className="text-sm text-purple-100">
+                <span className="text-lg text-purple-100">
                   {experience.company}
                 </span>
-              </h3>
+              </h4>
               <p className="mb-4 text-neutral-400">{experience.tasks}</p>
             </motion.div>
           </div>
