@@ -31,7 +31,7 @@ const NavBar = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex flex-shrink-0 items-center">
             <h1 className="text-2xl font-display font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-              Msseddy
+              Messeddy
             </h1>
           </div>
 
