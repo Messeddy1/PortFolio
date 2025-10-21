@@ -89,6 +89,7 @@ const NavBar = () => {
 
             {/* Mobile Menu Button */}
             <button
+              aria-label="Mobile Menu Button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="md:hidden text-secondary-400 hover:text-primary-400"
             >

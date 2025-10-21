@@ -12,6 +12,7 @@ const Education = () => {
       >
         Parcours scolaire
       </motion.h2>
+
       <div>
         {EDUCATIONS.map((experince, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
@@ -29,12 +30,12 @@ const Education = () => {
               transition={{ duration: 1.5 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">
+              <h3 className="mb-2 font-semibold">
                 {experince.role}{" "}
                 <span className="text-sm text-purple-100">
                   - {experince.School}
                 </span>
-              </h6>
+              </h3>
             </motion.div>
           </div>
         ))}

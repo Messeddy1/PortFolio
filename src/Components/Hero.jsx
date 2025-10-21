@@ -58,15 +58,18 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="secondary-button flex items-center gap-2 py-2 px-4"
+                aria-label="Visit Mohamed Esseddyqy GitHub profile"
               >
                 <FaGithub className="w-5 h-5" />
                 GitHub
               </a>
+
               <a
                 href="https://www.linkedin.com/in/mohamed-esseddyqy-640552246/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="secondary-button flex items-center gap-2 py-2 px-4"
+                aria-label="Visit Mohamed Esseddyqy LinkedIn profile"
               >
                 <FaLinkedin className="w-5 h-5" />
                 LinkedIn
@@ -100,7 +103,12 @@ const Hero = () => {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
         <button
-          onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+          aria-label="Scroll down to About section"
+          onClick={() =>
+            document
+              .getElementById("about")
+              .scrollIntoView({ behavior: "smooth" })
+          }
           className="animate-bounce text-secondary-400 hover:text-primary-400 transition-colors"
         >
           <FaArrowDown className="w-6 h-6" />
@@ -108,23 +116,6 @@ const Hero = () => {
       </motion.div>
     </div>
   );
-  //           </a>
-  //         </div>
-  //       </div>
-  //       <div className="w-full lg:w-1/2 lg:p-8">
-  //         <div className="flex justify-center">
-  //           <motion.img
-  //             initial={{ x: 100, opacity: 0 }}
-  //             animate={{ x: 0, opacity: 1 }}
-  //             transition={{ duration: 1, delay: 1.2 }}
-  //             src={profilePic}
-  //             alt="profile"
-  //           />
-  //         </div>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default Hero;
