@@ -75,6 +75,7 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary-400 hover:text-primary-400 transition-colors"
+              aria-label="Visit Mohamed Esseddyqy LinkedIn profile"
             >
               <FaLinkedin className="w-5 h-5" />
             </a>
@@ -83,6 +84,7 @@ const NavBar = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary-400 hover:text-primary-400 transition-colors"
+              aria-label="Visit Mohamed Esseddyqy GitHub profile"
             >
               <FaGithub className="w-5 h-5" />
             </a>
