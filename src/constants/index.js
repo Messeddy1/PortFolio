@@ -205,8 +205,10 @@ export const EXPERIENCE = [
     year: "October 2025 - Présent",
     role: "Développeur Web Stagiaire",
     company: "IntegralTech",
+
     tasks:
       "Participation active à des projets de développement web, y compris un projet ERP, apprentissage et maîtrise de nouvelles technologies, contribution au code côté front-end et back-end, et collaboration au sein d'une équipe professionnelle.",
+    companyUrl: "https://integraltech.ma/",
   },
   {
     year: "Freelance",
@@ -214,6 +216,7 @@ export const EXPERIENCE = [
     company: "Indépendant",
     tasks:
       "Réalisation de plusieurs projets en freelance avec Laravel, incluant le développement, l’optimisation et le déploiement d’applications web adaptées aux besoins des clients.",
+    companyUrl: "#",
   },
 
   {
@@ -222,6 +225,7 @@ export const EXPERIENCE = [
     company: "Webcinq",
     tasks:
       "Stage de fin d'études (PFE) : Participation à un projet de développement web complet, intégration de technologies modernes et gestion de projet en équipe.",
+    companyUrl: "https://www.webcinq.com/",
   },
   // RED WALLS (original)
   {
@@ -230,6 +234,7 @@ export const EXPERIENCE = [
     company: "RED WALLS",
     tasks:
       "Stage de fin d'études (PFE) : Participation à un projet de développement WordPress avancé, gestion de l'intégration de plugins et optimisation des performances.",
+    companyUrl: "https://www.redwalls.ma/",
   },
 ];
 export const CONTACT = {

@@ -30,16 +30,20 @@ export default function Experience() {
             >
               <h4 className="mb-2 font-semibold">
                 {experience.role} -{" "}
-                <span className="text-lg text-purple-100">
+                <a
+                  aria-label={`Go to ${experience.company} website`}
+                  target="_blank"
+                  href={experience.companyUrl}
+                  className="text-lg text-purple-100 hover:underline hover:text-primary-600 transition-all duration-300"
+                >
                   {experience.company}
-                </span>
+                </a>
               </h4>
               <p className="mb-4 text-neutral-400">{experience.tasks}</p>
             </motion.div>
           </div>
         ))}
       </div>
-
     </div>
   );
 }
