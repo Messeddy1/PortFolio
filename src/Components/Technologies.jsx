@@ -1,8 +1,9 @@
-import { RiReactjsLine } from "react-icons/ri";
-import { SiTailwindcss, SiMysql, SiLaravel, SiBootstrap } from "react-icons/si";
-import { TbBrandPhp } from "react-icons/tb";
+import * as RiIcons from "react-icons/ri";
+import * as SiIcons from "react-icons/si";
+import * as TbIcons from "react-icons/tb";
 // import { RiReactjsLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { TECHNOLOGIES } from "../constants";
 
 const iconmotion = (duration) => ({
   initial: {
@@ -18,6 +19,12 @@ const iconmotion = (duration) => ({
     },
   },
 });
+const getIconComponent = (iconName) => {
+  if (iconName.startsWith("Ri")) return RiIcons[iconName];
+  if (iconName.startsWith("Si")) return SiIcons[iconName];
+  if (iconName.startsWith("Tb")) return TbIcons[iconName];
+  return null;
+};
 const Technologies = () => {
   return (
     <div className="border border-neutral-800 pb-24">
@@ -35,64 +42,30 @@ const Technologies = () => {
         transition={{ duration: 1.5 }}
         className="flex flex-wrap justify-center items-center gap-4"
       >
-        <motion.div
-          variants={iconmotion(0.4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-          <div className="mt-2 text-center text-lg font-semibold">React.js</div>
-        </motion.div>
-        <motion.div
-          variants={iconmotion(0.6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiLaravel className="text-7xl text-[#F53003]" />
-          <div className="mt-2 text-center text-lg font-semibold">Laravel</div>
-        </motion.div>
-        <motion.div
-          variants={iconmotion(0.8)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiBootstrap className="text-7xl text-[#8011F5]" />
-          <div className="mt-2 text-center text-lg font-semibold">
-            Bootstrap
-          </div>
-        </motion.div>
-        <motion.div
-          variants={iconmotion(1)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiTailwindcss className="text-7xl text-[#38BDF8]" />
-          <div className="mt-2 text-center text-lg font-semibold">
-            Tailwind
-          </div>
-        </motion.div>
-        <motion.div
-          variants={iconmotion(1.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <TbBrandPhp className="text-7xl text-[#3578B6]" />
-          <div className="mt-2 text-center text-lg font-semibold">PHP</div>
-        </motion.div>
-        <motion.div
-          variants={iconmotion(1.4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMysql className="text-7xl text-[#0875a4]" />
-          <div className="mt-2 text-center text-lg font-semibold">MySQL</div>
-        </motion.div>
+{TECHNOLOGIES.map((tech) => {
+  const Icon = getIconComponent(tech.icon);
+
+  return (
+    <motion.div
+      key={tech.name}
+      variants={iconmotion(tech.variants)}
+      initial="initial"
+      animate="animate"
+      className="rounded-2xl flex flex-col justify-center items-center  border-4 border-neutral-800 p-4"
+    >
+      {Icon && (
+        <Icon
+          className="text-7xl"
+          style={{ color: tech.color }}
+        />
+      )}
+
+      <div className="mt-2 text-center text-lg font-semibold">
+        {tech.name}
+      </div>
+    </motion.div>
+  );
+})}
       </motion.div>
     </div>
   );

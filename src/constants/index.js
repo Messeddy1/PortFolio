@@ -28,14 +28,22 @@ import location1 from "../assets/projects/LocationCars/dashboardLocation.png";
 import location2 from "../assets/projects/LocationCars/filterLocationProject.png";
 import location3 from "../assets/projects/LocationCars/rentalLocation.png";
 
-export const HERO_CONTENT = `Développeur web débutant et motivé, passionné par la création de solutions digitales modernes et performantes. Avec déjà 3 mois d'expérience dans le développement web et en tant que freelancer, je suis à la recherche de mon premier emploi ou stage rémunéré pour continuer à apprendre et mettre mes compétences en pratique. Je me concentre sur l'écriture d'un code propre, réutilisable et évolutif pour garantir une expérience utilisateur fluide et une performance optimale. Mon objectif est de contribuer à des projets web utiles, accessibles et pensés pour les utilisateurs.
+export const HERO_CONTENT = `Développeur web débutant et motivé, passionné par la création de solutions digitales modernes et performantes.  actuellement développeur web chez IntegralTech à Marrakech, où je travaille sur site sur des projets ERP .
+
+Je mets un point d’honneur à écrire un code propre, réutilisable et évolutif, en accordant une attention particulière à la performance et à l’expérience utilisateur. Mon objectif est de contribuer à des projets web utiles, accessibles et conçus pour répondre aux besoins réels des utilisateurs, tout en continuant à renforcer mes compétences techniques.
 `;
 
 export const ABOUT_TEXT = `
-Je suis un développeur full stack débutant et freelancer, passionné par la création d'applications web efficaces et conviviales. En seulement 3 mois d'expérience pratique, j'ai acquis des compétences en React.js, Tailwind CSS, Bootstrap, Laravel, PHP et MySQL, et je suis impatient de les mettre en application dans un environnement professionnel.
+Je suis un développeur full stack débutant, passionné par la création d’applications web modernes, efficaces et conviviales. Je travaille actuellement chez IntegralTech à Marrakech, où je participe au développement et à la maintenance de solutions ERP en environnement professionnel.
 
-Mon parcours a commencé par une curiosité pour le fonctionnement des technologies, et aujourd'hui je cherche à rejoindre une équipe pour continuer à apprendre, relever de nouveaux défis et contribuer à des projets concrets. En dehors du codage, j'aime explorer de nouvelles technologies, apprendre continuellement et m'impliquer dans des projets open-source pour enrichir mon expérience.
+Je maîtrise des technologies telles que React.js, TypeScript, Tailwind CSS, Bootstrap, Laravel, PHP et MySQL, et je mets un point d’honneur à écrire un code propre, structuré et évolutif.
+
+Mon parcours est guidé par une curiosité constante pour les technologies du web et une forte volonté d’apprendre. Mon objectif est de continuer à évoluer au sein d’équipes dynamiques, relever des défis techniques et contribuer à des projets concrets à forte valeur ajoutée.
+
+En dehors du développement, j’aime explorer de nouvelles technologies, approfondir mes connaissances et m’impliquer dans des projets open-source afin d’améliorer mes compétences et adopter les bonnes pratiques du métier.
 `;
+
+
 
 export const EDUCATIONS = [
   {
@@ -202,7 +210,16 @@ Le système permet :
 ];
 export const EXPERIENCE = [
   {
-    year: "October 2025 - Présent",
+  year: "Janvier 2026 - Présent",
+  role: "Développeur Web",
+  company: "IntegralTech",
+  tasks:
+    "Participation active au développement et à la maintenance de solutions web professionnelles, notamment un projet ERP. Contribution au développement front-end et back-end, application des bonnes pratiques de code, et collaboration étroite avec une équipe technique dans un environnement professionnel.",
+  companyUrl: "https://integraltech.ma/",
+},
+
+  {
+    year: "October 2025 - December 2025",
     role: "Développeur Web Stagiaire",
     company: "IntegralTech",
 
@@ -238,7 +255,7 @@ export const EXPERIENCE = [
   },
 ];
 export const CONTACT = {
-  address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
+  // address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
   phoneNo: "+212-682389317.",
   email: "mohamedesseddyqqy@gmail.com",
   gmailLink: "mohamedesseddyqqy@gmail.com",
@@ -247,26 +264,44 @@ export const CONTACT = {
 export const TECHNOLOGIES = [
   {
     name: "React.js",
-    icon: "react",
+    icon: "RiReactjsLine",
+    color: "#38BDF8",
+    variants:0.4
   },
   {
     name: "Laravel",
-    icon: "laravel",
+    icon: "SiLaravel",
+    color:"#F53003",
+    variants:0.6
   },
   {
     name: "Bootstrap",
-    icon: "bootstrap",
+    icon: "SiBootstrap",
+    color :"#8011F5",
+    variants:0.8,
   },
   {
     name: "Tailwind CSS",
-    icon: "tailwind",
+    icon: "SiTailwindcss",
+    color: "#38BDF8",
+    variants:1
   },
   {
     name: "PHP",
-    icon: "php",
+    icon: "TbBrandPhp",
+    color :"#3578B6",
+    variants:1.2
+  },
+  {
+    name: "TypeScript",
+    icon: "SiTypescript",
+    color :"#3178C6",
+    variants:1.4
   },
   {
     name: "MySQL",
-    icon: "mysql",
+    icon: "SiMysql",
+    color:"#0875a4",
+    variants:1.6
   },
 ];
