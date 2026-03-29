@@ -28,13 +28,16 @@ import location1 from "../assets/projects/LocationCars/dashboardLocation.png";
 import location2 from "../assets/projects/LocationCars/filterLocationProject.png";
 import location3 from "../assets/projects/LocationCars/rentalLocation.png";
 
-export const HERO_CONTENT = `Développeur web débutant et motivé, passionné par la création de solutions digitales modernes et performantes.  actuellement développeur web chez IntegralTech à Marrakech, où je travaille sur site sur des projets ERP .
+export const HERO_CONTENT = `Développeur web Junior orienté résultats, spécialisé dans la création d’applications web performantes et scalables.
 
-Je mets un point d’honneur à écrire un code propre, réutilisable et évolutif, en accordant une attention particulière à la performance et à l’expérience utilisateur. Mon objectif est de contribuer à des projets web utiles, accessibles et conçus pour répondre aux besoins réels des utilisateurs, tout en continuant à renforcer mes compétences techniques.
-`;
+Chez IntegralTech (Marrakech), je participe activement au développement de systèmes ERP, en utilisant des technologies modernes telles que React, TypeScript et Laravel API, tout en respectant les standards de qualité, de performance et de maintenabilité.
+
+Je suis particulièrement attentif à la structure du code, à l’optimisation des performances et à l’expérience utilisateur, avec une approche basée sur les bonnes pratiques et les architectures propres.
+
+Passionné par le développement et en constante évolution, je cherche à intégrer une entreprise innovante où je pourrai contribuer concrètement, apprendre rapidement et évoluer vers un rôle de développeur Full-Stack expérimenté.`;
 
 export const ABOUT_TEXT = `
-Je suis un développeur full stack débutant, passionné par la création d’applications web modernes, efficaces et conviviales. Je travaille actuellement chez IntegralTech à Marrakech, où je participe au développement et à la maintenance de solutions ERP en environnement professionnel.
+Je suis un développeur full stack Junior, passionné par la création d’applications web modernes, efficaces et conviviales. Je travaille actuellement chez IntegralTech à Marrakech, où je participe au développement et à la maintenance de solutions ERP en environnement professionnel.
 
 Je maîtrise des technologies telles que React.js, TypeScript, Tailwind CSS, Bootstrap, Laravel, PHP et MySQL, et je mets un point d’honneur à écrire un code propre, structuré et évolutif.
 
@@ -209,12 +212,27 @@ Le système permet :
   },
 ];
 export const EXPERIENCE = [
-  {
+{
   year: "Janvier 2026 - Présent",
   role: "Développeur Web",
   company: "IntegralTech",
-  tasks:
-    "Participation active au développement et à la maintenance de solutions web professionnelles, notamment un projet ERP. Contribution au développement front-end et back-end, application des bonnes pratiques de code, et collaboration étroite avec une équipe technique dans un environnement professionnel.",
+tasks: `
+Développement & Collaboration :
+Participation active au développement et à la maintenance d’un ERP, avec intervention en front-end (React TypeScript) et back-end (Laravel API). Collaboration étroite avec l’équipe technique dans un environnement professionnel structuré.
+
+Module GED (Gestion Électronique des Documents) :
+Conception et développement d’un système complet d’archivage numérique.
+Implémentation de l’upload sécurisé, prévisualisation en temps réel et indexation des documents.
+
+Module Logistique (Agences de Voyage) :
+Développement de fonctionnalités métiers : gestion des transferts, affectation des chauffeurs et suivi des flottes.
+Automatisation de la génération de documents (vouchers, feuilles de route) en PDF via API.
+
+Maintenance & Qualité Logicielle :
+Maintenance corrective et évolutive de l’ERP avec résolution de bugs complexes.
+Optimisation des performances (Eager Loading, requêtes SQL).
+Application des bonnes pratiques (SOLID, Clean Code) et gestion du code avec Git.
+`,
   companyUrl: "https://integraltech.ma/",
 },
 

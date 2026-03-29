@@ -39,7 +39,7 @@ export default function Experience() {
                   {experience.company}
                 </a>
               </h4>
-              <p className="mb-4 text-neutral-400">{experience.tasks}</p>
+              <p style={{ whiteSpace: "pre-line" }} className="mb-4 text-neutral-400">{experience.tasks}</p>
             </motion.div>
           </div>
         ))}
