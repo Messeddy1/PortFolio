@@ -95,7 +95,7 @@ export const PROJECTS = [
   {
     title: "Bazaar",
     image: project4,
-    url: "https://bazaarya.store",
+    // url: "https://bazaarya.store",
     description:
       "Application e-commerce pour produits artisanaux marocains, construite avec React et Laravel Sanctum.",
     longDescription: `Bazaar est une application web responsive développée pour mon projet de fin d'études (PFE), 
@@ -212,11 +212,11 @@ Le système permet :
   },
 ];
 export const EXPERIENCE = [
-{
-  year: "Janvier 2026 - Présent",
-  role: "Développeur Web",
-  company: "IntegralTech",
-tasks: `
+  {
+    year: "Janvier 2026 - Présent",
+    role: "Développeur Web",
+    company: "IntegralTech",
+    tasks: `
 Développement & Collaboration :
 Participation active au développement et à la maintenance d’un ERP, avec intervention en front-end (React TypeScript) et back-end (Laravel API). Collaboration étroite avec l’équipe technique dans un environnement professionnel structuré.
 
@@ -233,8 +233,8 @@ Maintenance corrective et évolutive de l’ERP avec résolution de bugs complex
 Optimisation des performances (Eager Loading, requêtes SQL).
 Application des bonnes pratiques (SOLID, Clean Code) et gestion du code avec Git.
 `,
-  companyUrl: "https://integraltech.ma/",
-},
+    companyUrl: "https://integraltech.ma/",
+  },
 
   {
     year: "October 2025 - December 2025",
@@ -283,43 +283,79 @@ export const TECHNOLOGIES = [
   {
     name: "React.js",
     icon: "RiReactjsLine",
-    color: "#38BDF8",
-    variants:0.4
+    color: "#61DAFB",
+    variants: 0.4,
+  },
+  {
+    name: "React Native",
+    icon: "TbBrandReactNative",
+    color: "#61DAFB",
+    variants: 0.5,
   },
   {
     name: "Laravel",
     icon: "SiLaravel",
-    color:"#F53003",
-    variants:0.6
+    color: "#F53003",
+    variants: 0.6,
   },
   {
-    name: "Bootstrap",
-    icon: "SiBootstrap",
-    color :"#8011F5",
-    variants:0.8,
+    name: "TypeScript",
+    icon: "SiTypescript",
+    color: "#3178C6",
+    variants: 0.7,
   },
   {
     name: "Tailwind CSS",
     icon: "SiTailwindcss",
     color: "#38BDF8",
-    variants:1
+    variants: 0.8,
+  },
+  {
+    name: "Expo",
+    icon: "SiExpo",
+    color: "#ffffff",
+    variants: 0.9,
+  },
+  {
+    name: "Bootstrap",
+    icon: "SiBootstrap",
+    color: "#8011F5",
+    variants: 1.0,
   },
   {
     name: "PHP",
     icon: "TbBrandPhp",
-    color :"#3578B6",
-    variants:1.2
-  },
-  {
-    name: "TypeScript",
-    icon: "SiTypescript",
-    color :"#3178C6",
-    variants:1.4
+    color: "#3578B6",
+    variants: 1.1,
   },
   {
     name: "MySQL",
     icon: "SiMysql",
-    color:"#0875a4",
-    variants:1.6
+    color: "#0875a4",
+    variants: 1.2,
+  },
+  {
+    name: "Firebase",
+    icon: "SiFirebase",
+    color: "#FFCA28",
+    variants: 1.3,
   },
 ];
+
+export const MOBILE_APP = {
+  title: "LogiTrack — App Logistique",
+  company: "IntegralTech",
+  companyUrl: "https://integraltech.ma/",
+  description:
+    "Application mobile React Native / Expo développée pour le module logistique de l'ERP IntegralTech. Permet la gestion des transferts touristiques, l'affectation des chauffeurs et la génération PDF de vouchers et feuilles de route.",
+  platform: "iOS & Android",
+  technologies: ["React Native", "Expo", "TypeScript", "Laravel API", "Firebase", "Axios"],
+  features: [
+    "Gestion des transferts & flottes",
+    "Affectation des chauffeurs avec notifications push",
+    "Génération PDF automatique (vouchers, feuilles de route)",
+    "Suivi en temps réel avec tableau de bord live",
+    "Cross-platform iOS & Android via Expo EAS",
+  ],
+  type: "Enterprise — Application privée",
+};

@@ -1,56 +1,98 @@
-import About from "./Components/About";
-import Contacts from "./Components/Contacts";
-import Education from "./Components/Education";
-import Experience from "./Components/Experience";
-import Hero from "./Components/Hero";
-import NavBar from "./Components/NavBar";
-import Projects from "./Components/Projects";
-import Technologies from "./Components/Technologies";
-import SectionTransition from "./Components/SectionTransition";
+import About        from "./Components/About";
+import Contacts      from "./Components/Contacts";
+import Education     from "./Components/Education";
+import Experience    from "./Components/Experience";
+import Hero          from "./Components/Hero";
+import NavBar        from "./Components/NavBar";
+import Projects      from "./Components/Projects";
+import Technologies  from "./Components/Technologies";
+import MobileApp     from "./Components/MobileApp";
+import ReservationApp from "./Components/ReservationApp";
+import AnimeBackground from "./Components/AnimeBackground";
+
 export default function App() {
   return (
-    <div className="text-secondary-100 overflow-x-hidden antialiased selection:bg-primary-200 selection:text-primary-900 font-sans">
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="absolute top-0 z-[-2] h-screen w-screen bg-secondary-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(14,165,233,0.15),rgba(255,255,255,0))]"></div>
-      </div>
-      <div className="container mx-auto px-4 max-w-7xl">
+    <div
+      style={{
+        background: "linear-gradient(135deg, #07071f 0%, #0d0d2a 50%, #07071f 100%)",
+        color: "#f0f0ff",
+        overflowX: "hidden",
+        position: "relative",
+        minHeight: "100vh",
+      }}
+    >
+      {/* Animated sakura + grid canvas */}
+      <AnimeBackground />
+
+      {/* Noise texture overlay */}
+      <div className="noise-overlay" />
+
+      {/* Content */}
+      <div style={{ position: "relative", zIndex: 2 }}>
         <NavBar />
-        <div className="pt-20">
-          {" "}
-          {/* Add padding to account for fixed navbar */}
-          <section id="hero" className="min-h-screen flex items-center">
+
+        <div className="container mx-auto px-4 max-w-7xl" style={{ paddingTop: "80px" }}>
+
+          {/* Hero */}
+          <section id="hero">
             <Hero />
           </section>
-          <section id="about" className="py-20">
-            <SectionTransition>
-              <About />
-            </SectionTransition>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(255,45,120,0.2), transparent)", margin: "0" }} />
+
+          {/* About */}
+          <section id="about" className="py-24">
+            <About />
           </section>
-          <section id="technologies" className="py-20">
-            <SectionTransition>
-              <Technologies />
-            </SectionTransition>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(0,245,255,0.15), transparent)" }} />
+
+          {/* Technologies */}
+          <section id="technologies" className="py-24">
+            <Technologies />
           </section>
-          <section id="education" className="py-20">
-            <SectionTransition>
-              <Education />
-            </SectionTransition>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(255,215,0,0.15), transparent)" }} />
+
+          {/* Education */}
+          <section id="education" className="py-24">
+            <Education />
           </section>
-          <section id="experience" className="py-20">
-            <SectionTransition>
-              <Experience />
-            </SectionTransition>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(191,95,255,0.15), transparent)" }} />
+
+          {/* Experience */}
+          <section id="experience" className="py-24">
+            <Experience />
           </section>
-          <section id="projects" className="py-20">
-            <SectionTransition>
-              <Projects />
-            </SectionTransition>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(0,245,255,0.15), transparent)" }} />
+
+          {/* Projects */}
+          <section id="projects" className="py-24">
+            <Projects />
           </section>
-          <section id="contacts" className="py-20">
-            <SectionTransition>
-              <Contacts />
-            </SectionTransition>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(255,45,120,0.3), transparent)" }} />
+
+          {/* Mobile Apps — Showcase */}
+          <section id="mobileapp" className="py-24">
+            <MobileApp />
           </section>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(0,245,255,0.2), transparent)" }} />
+
+          <section id="reservationapp" className="py-24">
+            <ReservationApp />
+          </section>
+
+          <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, rgba(255,45,120,0.15), transparent)" }} />
+
+          {/* Contacts */}
+          <section id="contacts" className="py-24 pb-32">
+            <Contacts />
+          </section>
+
         </div>
       </div>
     </div>
