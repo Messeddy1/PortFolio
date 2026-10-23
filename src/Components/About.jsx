@@ -129,7 +129,7 @@ const About = () => {
                 userSelect: "none",
               }}
             >
-              "
+              &quot;
             </span>
 
             <p

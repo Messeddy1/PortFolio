@@ -343,19 +343,35 @@ export const TECHNOLOGIES = [
 ];
 
 export const MOBILE_APP = {
-  title: "LogiTrack — App Logistique",
+  title: "TMS Logistics — Driver Mobile App",
+  version: "v1.9.2",
   company: "IntegralTech",
   companyUrl: "https://integraltech.ma/",
   description:
-    "Application mobile React Native / Expo développée pour le module logistique de l'ERP IntegralTech. Permet la gestion des transferts touristiques, l'affectation des chauffeurs et la génération PDF de vouchers et feuilles de route.",
-  platform: "iOS & Android",
-  technologies: ["React Native", "Expo", "TypeScript", "Laravel API", "Firebase", "Axios"],
-  features: [
-    "Gestion des transferts & flottes",
-    "Affectation des chauffeurs avec notifications push",
-    "Génération PDF automatique (vouchers, feuilles de route)",
-    "Suivi en temps réel avec tableau de bord live",
-    "Cross-platform iOS & Android via Expo EAS",
+    "Application mobile professionnelle React Native / Expo développée pour le module logistique et transport touristique de l'ERP IntegralTech. Solution complète pour chauffeurs : gestion des courses, fiches de mission PDF, rappels automatiques, suivi carburant (gasoil), congés, dépenses et odomètre.",
+  platform: "iOS & Android (Cross-Platform)",
+  technologies: [
+    "React Native",
+    "Expo (EAS Build & Updates)",
+    "TypeScript",
+    "Laravel REST API",
+    "Firebase FCM",
+    "Expo Notifications (Local Reminders)",
+    "Expo FileSystem & Sharing",
+    "TailwindCSS / NativeWind",
+    "AsyncStorage",
   ],
-  type: "Enterprise — Application privée",
+  features: [
+    "Gestion complète des réservations & courses avec géolocalisation GPS en direct",
+    "Téléchargement et partage direct des programmes et vouchers en PDF via Expo Sharing",
+    "Service d'arrière-plan de notifications de rappel programmées pour chaque mission",
+    "Gestion sécurisée des encaissements (paiement direct chauffeur verrouillé avant fin de course)",
+    "Module dédié Gasoil / Carburant avec saisie des pleins, kilométrage et photos de tickets",
+    "Module Congés & Jours de Repos avec affichage des soldes et suivi des demandes",
+    "Déclaration détaillée des dépenses et frais de route avec pièces justificatives",
+    "Suivi kilométrique au départ et à l'arrivée avec calcul automatique du différentiel",
+    "Système de mise à jour transparente in-app (EAS OTA) et écran de maintenance",
+    "Support du thème sombre/clair et conception responsive multi-écrans",
+  ],
+  type: "Enterprise — Application privée de flotte",
 };
