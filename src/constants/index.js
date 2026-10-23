@@ -274,7 +274,7 @@ Application des bonnes pratiques (SOLID, Clean Code) et gestion du code avec Git
 ];
 export const CONTACT = {
   // address: "CM BLOCK 2 APT 15 DAWDIYAT MARRAKECH ",
-  phoneNo: "+212-682389317.",
+  phoneNo: "+212 669 49 98 42",
   email: "mohamedesseddyqqy@gmail.com",
   gmailLink: "mohamedesseddyqqy@gmail.com",
 };
